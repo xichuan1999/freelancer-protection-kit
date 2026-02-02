@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="dark" lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Checkout - Freelancer Protection Kit | SekolahDesain.id</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="style_refined.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#009DFF", // Friendship Blue
+                        "primary-dark": "#13137D", // Wisdom Blue
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0a0c10",
+                        "card-dark": "#161e27",
+                        "border-dark": "#223649",
+                    },
+                    fontFamily: {
+                        "display": ["Onest", "sans-serif"],
+                        "body": ["Open Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .font-display {
+            font-family: 'Onest', sans-serif;
+        }
+
+        .glow-blue {
+            box-shadow: 0 0 20px rgba(0, 157, 255, 0.15);
+        }
+
+        .form-input:focus {
+            box-shadow: 0 0 0 2px rgba(0, 157, 255, 0.2);
+        }
+
+        .form-error {
+            color: #ef4444;
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+            display: block;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen">
+    <!-- Top Navigation -->
+    <header
+        class="border-b border-slate-200 dark:border-border-dark bg-white dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <!-- Light Mode Logo -->
+                    <img src="assets/Logo.png" class="h-8 w-auto dark:hidden" alt="SekolahDesain.id Logo">
+                    <!-- Dark Mode Logo -->
+                    <img src="assets/logo-dark-mode.png" class="h-8 w-auto hidden dark:block"
+                        alt="SekolahDesain.id Logo">
+                    <span class="text-xl font-bold tracking-tight leading-none flex items-center pt-4">
+                        Freelancer<span class="text-primary text-xl">Kit</span>
+                    </span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <nav class="flex items-center gap-6">
+                    <a class="text-sm font-medium hover:text-primary transition-colors"
+                        href="index.html#features">Tentang Kit</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors"
+                        href="index.html#testimonials">Testimoni</a>
+                </nav>
+                <button
+                    class="bg-slate-100 dark:bg-border-dark px-4 py-2 rounded-lg text-sm font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+                    Bantuan
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pt-2 pb-2">
+        <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Left Column: Form & Trust Badges -->
+            <div class="flex-1 space-y-2">
+                <section>
+                    <h2 class="text-3xl font-black mb-1 leading-tight text-white">Selesaikan Pesanan</h2>
+                    <p class="text-slate-500 dark:text-slate-400">Lengkapi data Anda untuk mendapatkan akses produk
+                        digital secara instan.</p>
+                </section>
+
+                <!-- Registration Form -->
+                <form id="checkoutForm"
+                    class="space-y-5 bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-border-dark shadow-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-400" for="name">Nama
+                                Lengkap</label>
+                            <input id="name" name="name"
+                                class="form-input w-full rounded-lg bg-slate-50 dark:bg-background-dark border-slate-200 dark:border-border-dark focus:border-primary focus:ring-0 h-12 px-4 text-sm"
+                                placeholder="Masukkan nama lengkap" type="text" required minlength="3" />
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-400"
+                                for="email">Email</label>
+                            <input id="email" name="email"
+                                class="form-input w-full rounded-lg bg-slate-50 dark:bg-background-dark border-slate-200 dark:border-border-dark focus:border-primary focus:ring-0 h-12 px-4 text-sm"
+                                placeholder="email@contoh.com" type="email" required />
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-400"
+                                for="whatsapp">Nomor WhatsApp</label>
+                            <div class="relative">
+                                <span
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-medium text-sm">+62</span>
+                                <input id="whatsapp" name="whatsapp"
+                                    class="form-input w-full rounded-lg bg-slate-50 dark:bg-background-dark border-slate-200 dark:border-border-dark focus:border-primary focus:ring-0 h-12 pl-12 pr-4 text-sm"
+                                    placeholder="812 3456 7890" type="tel" required />
+                            </div>
+                            <span class="form-error" id="whatsapp-error"></span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-400" for="referral">Tahu
+                                kami dari mana?</label>
+                            <select id="referral" name="referral"
+                                class="form-select w-full rounded-lg bg-slate-50 dark:bg-background-dark border-slate-200 dark:border-border-dark focus:border-primary focus:ring-0 h-12 px-4 text-sm appearance-none">
+                                <option value="" disabled selected>Pilih sumber (opsional)</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Twitter (X)">Twitter (X)</option>
+                                <option value="LinkedIn">LinkedIn</option>
+                                <option value="Teman/Rekan Kerja">Teman/Rekan Kerja</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" id="submitBtn"
+                            class="w-full bg-primary hover:bg-primary-dark text-white py-4 rounded-xl text-base font-black tracking-wide transition-all shadow-xl shadow-primary/30 flex items-center justify-center gap-2">
+                            <span class="btn-text">LANJUTKAN KE WHATSAPP</span>
+                            <span class="material-symbols-outlined btn-icon">arrow_forward</span>
+                            <span class="btn-spinner hidden">Memproses...</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Payment Methods & Trust -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-slate-500">Metode Pembayaran
+                            Tersedia</h3>
+                        <div class="flex flex-wrap gap-8 items-center opacity-100 transition-all">
+                            <img alt="BCA" class="h-24 w-auto" src="assets/logo-bca.png" />
+                            <img alt="OCBC" class="h-28 w-auto" src="assets/logo-ocbc.png" />
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-green-500/5 border border-green-500/20">
+                            <span class="material-symbols-outlined text-green-500 text-3xl">verified_user</span>
+                            <div>
+                                <p class="font-bold text-sm">Keamanan Terverifikasi</p>
+                                <p class="text-xs text-slate-500">Enkripsi SSL 256-bit standar industri.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                            <span class="material-symbols-outlined text-primary text-3xl">rebase_edit</span>
+                            <div>
+                                <p class="font-bold text-sm">Garansi Uang Kembali</p>
+                                <p class="text-xs text-slate-500">30 hari jaminan kepuasan tanpa tanya.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Sticky Summary Card -->
+            <div class="lg:w-[380px]">
+                <div class="sticky top-28">
+                    <div
+                        class="bg-white dark:bg-card-dark rounded-2xl border-2 border-primary glow-blue overflow-hidden flex flex-col">
+                        <!-- Card Header -->
+                        <div class="bg-primary p-6 flex items-center gap-4">
+                            <div
+                                class="size-16 bg-white/20 rounded-xl backdrop-blur-md flex items-center justify-center border border-white/30 overflow-hidden">
+                                <img id="product-logo-img" src="assets/product-kit-logo.png"
+                                    class="w-full h-full object-cover" alt="Product Logo">
+                            </div>
+                            <div class="text-white">
+                                <p class="text-xs font-bold uppercase tracking-widest opacity-80">Produk Digital</p>
+                                <h3 id="product-title" class="text-xl font-bold">Protection Kit v2.0</h3>
+                            </div>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="p-6 space-y-6">
+                            <div>
+                                <p class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4">Termasuk
+                                    dalam Kit:</p>
+                                <ul id="product-features" class="space-y-4">
+                                    <li class="flex items-start gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-green-500 text-xl">check_circle</span>
+                                        <span class="text-sm font-medium">Draft Kontrak Hukum (Legal Contracts)</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-green-500 text-xl">check_circle</span>
+                                        <span class="text-sm font-medium">Kalkulator Rate Desainer Pro</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-green-500 text-xl">check_circle</span>
+                                        <span class="text-sm font-medium">Script Negosiasi Klien Sulit</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary text-xl">add_box</span>
+                                        <span class="text-sm font-bold text-primary">Bonus: Template Invoice
+                                            Profesional</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="border-slate-200 dark:border-border-dark" />
+                            <div class="flex flex-col gap-1">
+                                <p class="text-slate-500 text-sm">Total Investasi</p>
+                                <div class="flex items-baseline gap-2">
+                                    <span id="product-price" class="text-4xl font-black tracking-tighter">Rp
+                                        99.000</span>
+                                    <span id="product-strike-price" class="text-slate-500 text-sm line-through">Rp
+                                        499.000</span>
+                                </div>
+                                <p class="text-xs text-primary font-bold mt-1">Sekali Bayar • Akses Selamanya</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center mt-6 text-slate-500 text-sm flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-sm">lock</span>
+                        Proses pembayaran 100% aman & terenkripsi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer
+        class="max-w-7xl mx-auto px-6 py-12 border-t border-slate-200 dark:border-border-dark mt-20 text-center md:text-left">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-3 grayscale opacity-60">
+                <!-- Light Mode Logo -->
+                <img src="assets/Logo.png" class="dark:hidden" alt="SekolahDesain.id Logo"
+                    style="height: 24px; width: auto;">
+                <!-- Dark Mode Logo -->
+                <img src="assets/logo-dark-mode.png" class="hidden dark:block" alt="SekolahDesain.id Logo"
+                    style="height: 24px; width: auto;">
+                <span class="font-bold text-sm pt-3">Freelancer Protection Kit © 2025</span>
+            </div>
+            <div class="flex gap-8 text-sm font-medium text-slate-500 pt-3">
+                <a class="hover:text-primary transition-colors" href="#">Kebijakan Privasi</a>
+                <a class="hover:text-primary transition-colors" href="#">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

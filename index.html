@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html class="dark" lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Freelancer Protection Kit - Stop Ghosting & Get Paid | SekolahDesain.id</title>
+
+    <!-- SEO & Social Media -->
+    <meta name="description"
+        content="Stop Ghosting & Get Paid! Dapatkan template kontrak hukum, kalkulator rate, dan script negosiasi untuk freelancer profesional.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Freelancer Protection Kit | SekolahDesain.id">
+    <meta property="og:description"
+        content="Paket senjata lengkap untuk Freelancer: Kontrak Hukum, Invoice Template, & Rate Calculator. Amankan karirmu sekarang!">
+    <meta property="og:image" content="https://sekolahdesain.id/assets/img/og-image-freelancer-kit.jpg">
+    <!-- Placeholder until real image -->
+    <meta property="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="style_refined.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#009DFF", // Friendship Blue
+                        "primary-dark": "#13137D", // Wisdom Blue
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0B0C10",
+                        "surface-dark": "#151b23",
+                        "surface-highlight": "#1e2936",
+                        "accent-blue": "#009DFF",
+                    },
+                    fontFamily: {
+                        "display": ["Onest", "sans-serif"],
+                        "body": ["Open Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px" },
+                    backgroundImage: {
+                        'hero-glow': 'radial-gradient(circle at center, rgba(0, 157, 255, 0.15) 0%, rgba(11, 12, 16, 0) 70%)',
+                        'grid-pattern': "linear-gradient(to right, #1e2936 1px, transparent 1px), linear-gradient(to bottom, #1e2936 1px, transparent 1px)",
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Onest', sans-serif;
+        }
+
+        .grid-background {
+            background-size: 40px 40px;
+            mask-image: linear-gradient(to bottom, transparent, 10%, white, 90%, transparent);
+            -webkit-mask-image: linear-gradient(to bottom, transparent, 10%, white, 90%, transparent);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden transition-colors duration-300">
+    <!-- Navbar -->
+    <nav
+        class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-white/10 bg-white/80 dark:bg-[#0B0C10]/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <!-- Light Mode Logo -->
+                        <img src="assets/Logo.png" class="h-8 w-auto dark:hidden" alt="SekolahDesain.id Logo">
+                        <!-- Dark Mode Logo -->
+                        <img src="assets/logo-dark-mode.png" class="h-8 w-auto hidden dark:block"
+                            alt="SekolahDesain.id Logo">
+                        <span class="text-xl font-bold tracking-tight leading-none flex items-center pt-4">
+                            Freelancer<span class="text-primary text-xl">Kit</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
+                        href="#features">Fitur</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
+                        href="#testimonials">Testimoni</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
+                        href="#pricing">Harga</a>
+                    <a class="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full transition-colors"
+                        href="#pricing">Cohort Program</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="checkout.html"
+                        class="hidden sm:flex bg-primary hover:bg-primary-dark text-white text-sm font-bold py-2 px-4 rounded-lg transition-all shadow-[0_0_15px_rgba(0,157,255,0.3)] hover:shadow-[0_0_25px_rgba(0,157,255,0.5)]">
+                        Dapatkan Kit
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 text-slate-600 dark:text-slate-300">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-32 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 bg-hero-glow z-0"></div>
+        <div class="absolute inset-0 bg-grid-pattern opacity-[0.03] z-0 grid-background"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold uppercase tracking-wider mb-8 animate-fade-in-up">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Edisi 2025 Telah Rilis
+            </div>
+            <h1
+                class="font-display font-bold text-4xl sm:text-5xl md:text-7xl leading-[1.1] tracking-tight text-slate-900 dark:text-white mb-6 max-w-4xl">
+                Berhenti Kerja <span class="text-primary italic">Gratis.</span><br />
+                Mulai Kerja <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Profesional.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed font-body">
+                Jangan biarkan klien kabur atau karir mentok. Dapatkan perlindungan hukum lengkap (Kit) ATAU bimbingan
+                intensif (Cohort) untuk mendapatkan klien pertama dalam 30 hari.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="checkout.html"
+                    class="group flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white text-base font-bold h-12 px-8 rounded-lg transition-all shadow-[0_0_20px_rgba(0,157,255,0.4)] hover:shadow-[0_0_30px_rgba(0,157,255,0.6)]">
+                    <span>Ambil Promo — Rp 99rb Sekarang →</span>
+                </a>
+                <button
+                    class="flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white text-base font-medium h-12 px-8 rounded-lg transition-all backdrop-blur-sm">
+                    <span class="material-symbols-outlined text-[18px]">play_circle</span>
+                    <span>Lihat Preview</span>
+                </button>
+            </div>
+            <div class="mt-16 pt-8 border-t border-white/5 w-full max-w-3xl">
+                <p class="text-sm text-slate-500 font-medium mb-4 uppercase">Dipercaya oleh 10.000+ Desainer Indonesia
+                </p>
+                <div
+                    class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    <!-- Logo Placeholders using Text for simplicity but representing brands -->
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-3xl">token</span>
+                        <span class="font-bold text-xl tracking-tight">DesignStu</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-3xl">landscape</span>
+                        <span class="font-bold text-xl tracking-tight">Kreatif.id</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-3xl">architecture</span>
+                        <span class="font-bold text-xl tracking-tight">ArchiTech</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-3xl">gesture</span>
+                        <span class="font-bold text-xl tracking-tight">PixelNusantara</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horror Stories Section (Pain Points) -->
+    <section class="py-24 bg-background-dark relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">Pernah Ngalamin Horor Ini?</h2>
+                <p class="text-slate-400">Freelance bukan berarti harus pasrah dikerjain klien.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-surface-dark border border-red-500/20 p-6 rounded-xl flex gap-4">
+                    <span class="text-3xl">👻</span>
+                    <div>
+                        <p class="text-slate-300 italic">"Bulan lalu begadang 3 malam buat logo. Pas nagih, WA diblokir.
+                            Portofolio nambah, tapi saldo tetep nol."</p>
+                    </div>
+                </div>
+                <div class="bg-surface-dark border border-red-500/20 p-6 rounded-xl flex gap-4">
+                    <span class="text-3xl">🤡</span>
+                    <div>
+                        <p class="text-slate-300 italic">"Revisi udah ke-10, klien minta ganti konsep TOTAL tanpa mau
+                            bayar extra. Berani nolak, takut gak dibayar."</p>
+                    </div>
+                </div>
+                <div class="bg-surface-dark border border-red-500/20 p-6 rounded-xl flex gap-4">
+                    <span class="text-3xl">🏜️</span>
+                    <div>
+                        <p class="text-slate-300 italic">"Beli e-course cuma ditonton doang. Gak ada yang negur kalau
+                            males, akhirnya nyerah di tengah jalan."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bento Grid Features Section -->
+    <section class="py-24 bg-surface-dark/50 relative" id="features">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">Lengkap & Terpercaya</h2>
+                    <p class="text-slate-400 text-lg">Semua yang Anda butuhkan untuk bekerja dengan tenang dan
+                        profesional dalam satu paket download.</p>
+                </div>
+                <div class="flex gap-2">
+                    <button
+                        class="p-2 rounded-full border border-white/10 hover:bg-white/5 text-white transition-colors">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button
+                        class="p-2 rounded-full border border-white/10 hover:bg-white/5 text-white transition-colors">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
+                <!-- Main Feature: Legal Contracts -->
+                <div
+                    class="md:col-span-2 row-span-2 relative group overflow-hidden rounded-xl border border-white/10 bg-surface-highlight hover:border-primary/50 transition-colors p-8">
+                    <div
+                        class="absolute top-0 right-0 p-32 bg-primary/20 blur-[100px] rounded-full pointer-events-none -mr-16 -mt-16">
+                    </div>
+                    <div class="relative z-10 flex flex-col h-full justify-between">
+                        <div class="mb-6">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary mb-4">
+                                <span class="material-symbols-outlined text-2xl">gavel</span>
+                            </div>
+                            <h3 class="font-display font-bold text-2xl text-white mb-2">SPK Anti-Ghosting (Siap Edit)
+                            </h3>
+                            <p class="text-slate-400 max-w-md">Template kontrak bahasa Indonesia yang sah. Mengatur
+                                jatah revisi, DP 50%, dan penalti pembatalan agar hakmu terlindungi.</p>
+                        </div>
+                        <!-- Visual representation of a contract -->
+                        <div
+                            class="w-full bg-background-dark/80 rounded-lg p-4 border border-white/5 text-xs font-mono text-slate-500 shadow-xl transform group-hover:translate-y-[-5px] transition-transform duration-300">
+                            <div class="flex gap-2 mb-3">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="space-y-2 opacity-70">
+                                <div class="w-1/3 h-2 bg-slate-700 rounded"></div>
+                                <div class="w-full h-2 bg-slate-800 rounded"></div>
+                                <div class="w-5/6 h-2 bg-slate-800 rounded"></div>
+                                <div class="w-4/5 h-2 bg-slate-800 rounded"></div>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-slate-700/50 flex justify-between items-center">
+                                <span class="text-primary uppercase">Pasal 4: Pembayaran</span>
+                                <span
+                                    class="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-[10px]">VERIFIED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature: Rate Calculator -->
+                <div
+                    class="relative group overflow-hidden rounded-xl border border-white/10 bg-surface-highlight hover:border-primary/50 transition-colors p-6 flex flex-col justify-between">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
+                        <span class="material-symbols-outlined text-xl">calculate</span>
+                    </div>
+                    <div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Kalkulator Tarif & Profit</h3>
+                        <p class="text-sm text-slate-400">Bukan tebak-tebakan. Masukkan biaya operasional & margin,
+                            sistem hitung tarif minimalmu.</p>
+                    </div>
+                    <div
+                        class="mt-4 flex items-center justify-between bg-background-dark p-3 rounded border border-white/5">
+                        <span class="text-xs text-slate-500">Estimasi Project</span>
+                        <span class="text-sm font-bold text-emerald-400">Rp 15.000.000</span>
+                    </div>
+                </div>
+                <!-- Feature: Negotiation Scripts -->
+                <div
+                    class="relative group overflow-hidden rounded-xl border border-white/10 bg-surface-highlight hover:border-primary/50 transition-colors p-6 flex flex-col justify-between">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400 mb-4">
+                        <span class="material-symbols-outlined text-xl">chat_bubble</span>
+                    </div>
+                    <div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Script Negosiasi "Mahal Banget"</h3>
+                        <p class="text-sm text-slate-400">50+ Template copy-paste untuk jawab klien nawar sadis, revisi
+                            tanpa batas, atau alasan budget tipis.</p>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <div
+                            class="bg-purple-500/10 p-2 rounded-lg rounded-tl-none border border-purple-500/20 text-[10px] text-purple-200 w-fit">
+                            Maaf pak, budget segitu belum masuk...
+                        </div>
+                        <div
+                            class="bg-primary/10 p-2 rounded-lg rounded-tr-none border border-primary/20 text-[10px] text-primary-200 ml-auto w-fit">
+                            Berikut opsi paket hemat yang bisa...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="py-24 relative overflow-hidden" id="testimonials">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display font-bold text-3xl md:text-4xl text-center text-white mb-16 uppercase">Kata Mereka
+            </h2>
+            <div class="flex overflow-x-auto pb-8 snap-x no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0">
+                <style>
+                    .no-scrollbar::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    .no-scrollbar {
+                        -ms-overflow-style: none;
+                        scrollbar-width: none;
+                    }
+                </style>
+                <div class="flex gap-6">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="min-w-[300px] sm:min-w-[350px] bg-surface-highlight border border-white/5 p-6 rounded-xl snap-center hover:border-primary/30 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-600">
+                                <div class="w-full h-full bg-cover bg-center"
+                                    style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop');">
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Raka Adhitama</h4>
+                                <p class="text-slate-500 text-xs">UI/UX Designer @ TechIndo</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">"Ikut Cohort ini beda banget. Dipaksa praktek
+                            tiap minggu, dan beneran dapet klien $500 pertama pas minggu ke-3. Gak nyesel upgrade!"</p>
+                        <div class="flex text-yellow-500 mt-4 text-[16px]">
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="min-w-[300px] sm:min-w-[350px] bg-surface-highlight border border-white/5 p-6 rounded-xl snap-center hover:border-primary/30 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-600">
+                                <div class="w-full h-full bg-cover bg-center"
+                                    style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop');">
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Sarah Wijaya</h4>
+                                <p class="text-slate-500 text-xs">Freelance Illustrator</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">"Dulu bingung nentuin harga, sering kemurahan.
+                            Pake kalkulator dari kit ini jadi PD kasih harga tinggi karena ada hitungan jelasnya."</p>
+                        <div class="flex text-yellow-500 mt-4 text-[16px]">
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="min-w-[300px] sm:min-w-[350px] bg-surface-highlight border border-white/5 p-6 rounded-xl snap-center hover:border-primary/30 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-600">
+                                <div class="w-full h-full bg-cover bg-center"
+                                    style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop');">
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Budi Santoso</h4>
+                                <p class="text-slate-500 text-xs">Senior Graphic Designer</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">"Script negosiasinya kepake banget buat
+                            ngadepin klien 'harga teman'. Sangat merekomendasikan ini buat pemula maupun pro."</p>
+                        <div class="flex text-yellow-500 mt-4 text-[16px]">
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                            <span class="material-symbols-outlined fill-current"
+                                style="font-variation-settings: 'FILL' 1">star</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="py-24 bg-gradient-to-b from-background-dark to-surface-dark relative" id="pricing">
+        <div class="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="text-center mb-16">
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">Pilih Jalur Karirmu</h2>
+                <p class="text-slate-400">Mulai dari perlindungan dasar atau percepatan karir dengan mentor.</p>
+            </div>
+
+            <div class="pricing-container">
+                <!-- Tier 1: Freelancer Kit -->
+                <div class="pricing-card standard">
+                    <span class="plan-name">Freelancer Kit</span>
+                    <p class="plan-desc">Perlindungan hukum & alat kerja profesional untuk desainer mandiri.</p>
+
+                    <div class="plan-price">
+                        <span class="amount">Rp 99rb</span>
+                        <span class="period">/ selamanya</span>
+                    </div>
+
+                    <a href="checkout.html" class="btn-plan btn-outline">Ambil Kit Saja</a>
+
+                    <div class="plan-features mt-8">
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <span class="material-symbols-outlined feature-icon">check_circle</span>
+                                <div><strong>3 Template Kontrak</strong> (SPK, NDA)</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-outlined feature-icon">check_circle</span>
+                                <div><strong>Kalkulator Tarif</strong> Pintar</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-outlined feature-icon">check_circle</span>
+                                <div><strong>50+ Script</strong> Negosiasi</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-outlined feature-icon">check_circle</span>
+                                <div><strong>Slide Deck</strong> Capabilities Asset</div>
+                            </li>
+                            <li class="feature-item missing">
+                                <span class="material-symbols-outlined feature-icon">cancel</span>
+                                <div>Mentorship & Review</div>
+                            </li>
+                            <li class="feature-item missing">
+                                <span class="material-symbols-outlined feature-icon">cancel</span>
+                                <div>Accountability Pod</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tier 2: Cohort Batch 1 -->
+                <div class="pricing-card premium">
+                    <div class="card-badge">Best Value</div>
+                    <span class="plan-name">Cohort Batch 1</span>
+                    <p class="plan-desc">Program intensif 30 hari untuk mendapatkan klien pertama dengan bimbingan.
+                    </p>
+
+                    <div class="plan-price">
+                        <span class="amount">Rp 499rb</span>
+                        <span class="period">/ batch</span>
+                    </div>
+
+                    <a href="checkout.html?plan=cohort" class="btn-plan btn-solid">Gabung Cohort →</a>
+
+                    <div class="plan-features mt-8">
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <span class="material-symbols-outlined feature-icon">check_circle</span>
+                                <div><strong>Semua Fitur</strong> Freelancer Kit</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-outlined feature-icon">check_circle</span>
+                                <div><strong>4 Live Mentoring</strong> Sessions</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-outlined feature-icon">check_circle</span>
+                                <div><strong>Review Portofolio</strong> Personal</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-outlined feature-icon">hub</span>
+                                <div><strong>Accountability Pods</strong> (Anti-Lazy)</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-outlined feature-icon">workspace_premium</span>
+                                <div><strong>Sertifikasi</strong> Kompetensi</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-outlined feature-icon">group</span>
+                                <div>Akses Komunitas VIP</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-background-dark border-t border-white/10 pt-16 pb-8 text-center sm:text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-6">
+                <div class="flex items-center gap-3 grayscale opacity-60">
+                    <!-- Light Mode Logo -->
+                    <img src="assets/Logo.png" class="dark:hidden" alt="SekolahDesain.id Logo"
+                        style="height: 24px; width: auto;">
+                    <!-- Dark Mode Logo -->
+                    <img src="assets/logo-dark-mode.png" class="hidden dark:block" alt="SekolahDesain.id Logo"
+                        style="height: 24px; width: auto;">
+                    <span class="font-bold text-sm pt-3">Freelancer Protection Kit © 2025</span>
+                </div>
+                <div class="flex gap-6 pt-3">
+                    <a class="text-slate-500 hover:text-white transition-colors" href="#">Twitter</a>
+                    <a class="text-slate-500 hover:text-white transition-colors" href="#">Instagram</a>
+                    <a class="text-slate-500 hover:text-white transition-colors" href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="text-center md:text-left text-slate-600 text-sm">
+                &copy; 2025 Freelancer Protection Kit Indonesia | SekolahDesain.id. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
