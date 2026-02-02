@@ -243,7 +243,7 @@ function clearError(fieldId) {
 const PRODUCTS = {
     'kit': {
         title: 'Protection Kit v2.0',
-        logo: 'assets/product-kit-logo.png',
+        logo: 'assets/freelancer_kit_2d_logo.png',
         price: 'Rp 99.000',
         strike: 'Rp 499.000',
         features: [
@@ -255,7 +255,7 @@ const PRODUCTS = {
     },
     'cohort': {
         title: 'Cohort Batch 1 (Premium)',
-        logo: 'assets/product-kit-logo.png', // Keeping same for now or I can gen another
+        logo: 'assets/cohort_premium_2d_logo.png',
         price: 'Rp 499.000',
         strike: 'Rp 1.500.000',
         features: [
